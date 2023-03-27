@@ -1,0 +1,40 @@
+.tit{
+    margin:5px;
+}
+.bo{
+    border: 1px solid lavender;
+    width: 100%;
+    margin-top: 15px;
+}
+.bo1{
+    border: 1px solid lavender;
+    width: 100%;
+    margin-top: 150px;
+}
+.text-5xl{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+
+
+}
+.pp{
+    margin: 15px;
+}
+.p1{
+    color: grey;
+    margin-top: 10px;
+}
+.con{
+    background-color: lavenderblush;
+    height: auto;
+}
+.mar{
+    margin-top: 15%;
+}
+@media only screen and (max-width: 600px){
+    .mar{
+        margin-top: 45%;
+    }
+}.w-72 {
+    width: 25rem;
+}
