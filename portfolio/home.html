@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <title>chewy's porfolio</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section -->
+
+
+    <!-- Implement the Navbar -->
+    <nav class="border-b">
+        <div x-data="{showMenu : false}" class="container max-w-screen-lg mx-auto flex justify-between h-14">
+            <!-- Brand-->
+            <a href="#" class="flex items-center cursor-pointer hover:bg-purple-50 px-2 ml-3">
+                <!-- Logo-->
+                <div class=" font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">
+                  <img src="img/port.png" width="180px">
+                </div>
+                <div style="font-family: 'Cherry Swash', cursive;">
+                  <h2 class="text-2xl">My Portfolio</h2></div>
+            </a>
+            <!-- Navbar Toggle Button -->
+            <button @click="showMenu = !showMenu" class="block md:hidden text-gray-700 p-2 rounded hover:border focus:border focus:bg-gray-100 my-2 mr-5" type="button" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <!-- Nav Links-->
+            <ul class="md:flex text-gray-700 text-base mr-3 origin-top"
+                :class="{ 'block absolute top-14 border-b bg-white w-full p-2': showMenu, 'hidden': !showMenu}"
+                id="navbar-main" x-cloak>
+                <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800" :class="showMenu && 'py-1'">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800" :class="showMenu && 'py-1'">
+                    <a href="#project">Project</a>
+                </li>
+                <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800" :class="showMenu && 'py-1'">
+                    <a href="#about">About</a>
+                </li>
+                <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800" :class="showMenu && 'py-1'">
+                    <a href="#contact">Contact</a>
+                </li>
+              
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="bgh h-64">
+        <div class="md:flex h-full items-stretch">
+          <div class="p-10 md:w-1/2">   <h3 class="text-5xl">
+            Front-end developer</h3>
+            <br>
+
+            <h5 style="margin-left: 8%;font-size:18px;
+            font-weight: bold;">I design and code beautifully simple things, and I love what I do.
+            </h5>
+          </div>
+          <div class="p-10 md:w-1/2">    <img src="img/o.png" class="im"></div>
+        </div>
+      </div>
+    
+     
+<div id="brf">
+<h1 style="text-align: center;color: white;margin-top: 5%;"class="text-6xl">
+    Hi,I'm Chew.Nice to meet you.
+</h1><br><br>
+<h2 style="text-align: center;color: white;"class="text-2xl">
+    I am a third year student from computer science major.<br>
+    I've been studying front-end development since 2020. <br>
+    As an experience, I've worked in school group projects. <br>I've also written projects by myself.
+
+</h2>
+
+</div>
+<div class="boi">
+    <div class="bg-white-700 h-64">
+        <div class="md:flex h-full items-stretch">
+          <div class="bg-white-500 p-10 md:w-1/2 gh" >
+            <div id="circle">
+<img src="img/sk.png" class="sk">
+</div><br>
+<h2 style="text-align: center;font-weight:bold;font-size: x-large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;">Frontend developer</h2>
+<br>
+<p style="text-align: center;font-size:18px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    I like to code things 
+     and enjoy bringing ideas to life in the browser.
+
+</p><br><br>
+<p style="font-size: 18px;color: #2c599d;text-align: center;">
+Language I have</p>
+<p style="text-align: center;">HTML,CSS,Javascript,PHP
+</p>
+<br><br>
+<p style="font-size: 18px;color: #2c599d;text-align: center;">
+    Dev tools</p>
+    <p style="text-align: center;">
+        Bootstrap<br>
+        TailwindCSS<br>
+        Github<br>
+        Visualstudiocode<br>
+        Sublimetext
+    </p>
+
+
+
+          </div>
+          <div class="bg-white-500 p-10 md:w-1/2 " >
+            <div id="circle">
+<img src="img/kno.png" class="sk">
+</div><br>
+<h2 style="text-align: center;font-weight:bold;font-size: x-large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;">Additional Skill</h2>
+<br>
+<p style="text-align: center;font-size:18px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  I am a person who likes to create beautiful designs, so I study things related to frontend.
+  
+
+</p><br><br>
+<p style="font-size: 18px;color: #2c599d;text-align: center;">
+Knowledge I have</p>
+<p style="text-align: center;">Java,JSP,Servlet,UX,UI,Logo
+</p>
+<br><br>
+<p style="font-size: 18px;color: #2c599d;text-align: center;">
+    Dev tools</p>
+    <p style="text-align: center;">
+    Adobe Illustrator<br>
+        Fontawesome<br>
+        Figma<br>
+        Eclipse<br>
+      Star UML
+    </p>
+
+
+
+          </div>
+        
+        
+        </div>
+      </div>
+</div>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="project">
+<h2 class="text-3xl" style="color: black;text-align: center;">
+   <b> My Recent Project</b>
+</h2>
+<p style="text-align: center;color:black;
+margin-top: 5px;">Here are a few past design projects I've worked on</p>
+<div class="lavender h-64">
+    <div class="md:flex h-full items-stretch">
+      <div class="lavender p-10 md:w-1/3">
+        <div class="container">
+            <img src="prj/c8.png" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Choosing University
+              <a href="uni.html"><button class="button-4" role="button">See More</button></a>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+      <div class="lavender p-10 md:w-1/3">
+        <div class="container">
+            <img src="prj/b2.png" alt="Avatar" class="image" 
+            style="height: 235px;">
+            <div class="overlay">
+              <div class="text">K-items
+
+              <a href="k.html">  <button class="button-4" role="button">See More</button></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="lavender p-10 md:w-1/3">
+        <div class="container">
+            <img src="prj/ja.png" alt="Avatar" class="image" style="height: 236px;">
+            <div class="overlay">
+              <div class="text">Travelling
+              <a href="travel.html"> <button class="button-4" role="button">See More</button></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="contact"><div class="h-10m la">
+  <div class="md:flex h-full items-stretch">
+    <div class="bg-blue-300 p-10 md:w-1/2">
+
+
+      <img src="img/ph.png" style="width: 35px;" class="s">
+      <p style="text-align: center;">09-792119324</p>
+    </div>
+    <div class="bg-blue-300 p-10 md:w-1/3">
+      <img src="img/mail.png" style="width: 35px;" class="s">
+      <p style="text-align: center;">chewc650@gmail.com</p>
+    </div>
+    <div class="bg-blue-300 p-10 md:w-1/3">      
+      <img src="img/link.png" style="width: 35px;" class="s">
+      <p style="text-align: center;"><a href="https://www.linkedin.com/in/chew-chew-905005270/">Chew Chew</a></p>
+    </div>
+  </div>
+</div></div>
+
+
+
+
+
+</body>
+
+</html>
